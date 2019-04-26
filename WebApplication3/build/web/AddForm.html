@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Add Student</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" >
+    <link rel="stylesheet" href="https://bootswatch.com/4/journal/bootstrap.min.css">
+    </head>
+    <body>
+     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarColor01">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="HomePage?action=home">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HomePage?action=edit">Edit Student</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="HomePage?action=view">View Students</a>
+      </li>
+    </ul>
+    
+  </div>
+</nav>
+        <div class="form-group">
+            <form action="AddStudent" method="POST">
+                
+            ID <input type="number" class="form-control" name="ID" />
+            <br />
+            Name: <input type="text" class="form-control" name="Name">
+            <br />
+            Department: <input type="text" class="form-control" name="Department" />
+            <br />
+            GPA <input type="number" step="0.01" class="form-control" name="GPA" />
+            <br />
+            Graduation Year <input type="number" class="form-control" name="Graduation Year" />
+            
+            <input type="submit" class="btn btn-primary" value="Submit" />
+        </form>
+        </div>
+
+        
+    </body>
+</html>
